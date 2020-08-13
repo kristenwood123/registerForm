@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h2>Register</h2>
+    <div>
+<!-- action - where the form sends data to -->
+<!-- method - what HTTP method (get/post) -->
+
+    <form action="results.html" method="GET" class="form" id="form">
+    <div>
+        <label>First name<br></label>
+        <input name="firstname" id="firstname" type="text" required><br><br>
+    </div>
+    <div>
+        <label>Last name<br></label>
+        <input name="lastname" id="lastname" type="text" required><br><br>
+    </div>
+    <div>
+        <label>Email address<br></label>
+        <input name="email" id="email" type="email" required><br><br>
+    </div>
+    <div>   
+        </label>Password<br></label>
+        <input name="password" id="password" type="password" id="password" placeholder="Must be at least 8 characters" required><br><br>
+    </div> 
+        <button type="submit">Register</button>
+    </form>
+</div>
+<script src="app.js"></script>
+
+</body>
+</html>
