@@ -6,11 +6,12 @@ const password = document.getElementById('password')
 document.addEventListener('submit', (e) => {
  if (password.value.length < 8) {
      alert('Password must be 8 characters long') 
+  e.preventDefault()
 } else {  
     return console.log(`Name: ${firstName.value} ${lastName.value},
     Email: ${email.value}, Password: ${password.value}`)
 }
-e.preventDefault()
+
 })
 
 
