@@ -1,20 +1,16 @@
+const firstName = document.getElementById('firstname')
+const lastName = document.getElementById('lastname')
+const email = document.getElementById('email')
+const password = document.getElementById('password')
 
-const PASSWORD = document.getElementById('password')
-
-form.addEventListener('sumbit', (e) => {
-    e.preventDefault()
-
-    checkInput()
+document.addEventListener('submit', (e) => {
+ if (password.value.length < 8) {
+     alert('Password must be 8 characters long') 
+} else {  
+    return console.log(`Name: ${firstName.value} ${lastName.value},
+    Email: ${email.value}, Password: ${password.value}`)
+}
+e.preventDefault()
 })
 
-checkInput = () => {
-    const PASSWORDvalue = PASSWORD.value.trim()
 
-    if(PASSWORDvalue.length < 8) {
-        alert('must be 8')
-    }
-    else {
-        
-      //show success
-    }
-}
