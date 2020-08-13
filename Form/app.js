@@ -10,8 +10,7 @@ document.addEventListener('submit', (e) => {
 } else {  
     return console.log(`Name: ${firstName.value} ${lastName.value},
     Email: ${email.value}, Password: ${password.value}`)
-}
-
+    }
 })
 
 
