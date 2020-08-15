@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,31 +7,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h2>Register</h2>
+    <div id="box-container">
     <div>
-<!-- action - where the form sends data to -->
-<!-- method - what HTTP method (get/post) -->
-
-    <form action="results.html" method="GET" class="form" id="form">
-    <div>
+    <form class="form" id="form" method="GET" onsubmit="return false">
+    </div>
+    <!-- <form class="form" id="form" method="GET" onsubmit="event.preventdefault()"> -->
+    <div class="input">
+        <div id="register">Register</div>
         <label>First name<br></label>
         <input name="firstname" id="firstname" type="text" required><br><br>
     </div>
-    <div>
+    <div class="input">
         <label>Last name<br></label>
         <input name="lastname" id="lastname" type="text" required><br><br>
     </div>
-    <div>
+    <div class="input">
         <label>Email address<br></label>
         <input name="email" id="email" type="email" required><br><br>
     </div>
-    <div>   
+    <div class="input">   
         </label>Password<br></label>
-        <input name="password" id="password" type="password" id="password" placeholder="Must be at least 8 characters" required><br><br>
+        <input name="password" id="password" type="password" id="password" placeholder="Must be at lea
     </div> 
         <button type="submit">Register</button>
     </form>
 </div>
+
 <script src="app.js"></script>
 
 </body>
