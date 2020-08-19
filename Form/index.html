@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,20 +16,23 @@
     <div class="input">
         <div id="register">Register</div>
         <label>First name<br></label>
-        <input name="firstname" id="firstname" type="text" required><br><br>
+        <input name="firstname" type="text"><br><br>
     </div>
     <div class="input">
         <label>Last name<br></label>
-        <input name="lastname" id="lastname" type="text" required><br><br>
+        <input name="lastname" id="lastname" type="text"><br><br>
     </div>
     <div class="input">
         <label>Email address<br></label>
-        <input name="email" id="email" type="email" required><br><br>
+        <input name="email" id="email" type="email" required> 
+        <p>Email must be a valid address, e.g. me@mydomain.com</p>
     </div>
+    
     <div class="input">   
         </label>Password<br></label>
-        <input name="password" id="password" type="password" id="password" placeholder="Must be at lea
+        <input name="password" id="password" type="password" id="password" placeholder="Must be at least 8 characters" required><br><br>
     </div> 
+    
         <button type="submit">Register</button>
     </form>
 </div>
